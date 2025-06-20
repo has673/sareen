@@ -32,9 +32,10 @@ export default function Works() {
         How Sareen Works
       </h1>
       <p className="text-[#737373] text-center text-sm md:text-base mt-2">
-        Embrace life's vastness, venture forth, and discover the wonders waiting
-        beyond.
+        Embrace life&rsquo;s vastness, venture forth, and discover the wonders
+        waiting beyond.
       </p>
+
       <p className="text-[#737373] text-center text-sm md:text-base">
         The world beckons; seize its grand offerings now!
       </p>
