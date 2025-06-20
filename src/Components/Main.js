@@ -22,7 +22,7 @@ const Main = () => {
       <div className="relative z-10 flex flex-col md:flex-row w-full justify-around py-10 px-4 gap-6">
         {/* Text Section */}
         <div className="md:pr-8 text-center md:text-left">
-          <h1 className="text-[41px] text-[#007BFF] font-semibold max-w-xl leading-tight mb-3">
+          <h1 className="md:text-[41px] text-3xl text-[#007BFF] font-semibold max-w-xl leading-tight mb-3">
             Revolutionizing Product Delivery – from Storefront to your Doorstep
           </h1>
           <span className="text-[#373737] text-2xl font-normal ">

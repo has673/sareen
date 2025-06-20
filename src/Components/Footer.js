@@ -64,15 +64,21 @@ const Footer = () => {
                 nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
               </p>
               <div className="flex gap-4 pt-2">
-                {[Facebook, Instagram, Twitter, Youtube].map((Icon, idx) => (
-                  <a
-                    key={idx}
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                ))}
+                {[Facebook, Instagram, Twitter, Youtube].map(
+                  (Icon, idx, arr) => (
+                    <div className="flex items-center gap-x-2" key={idx}>
+                      <a
+                        href="#"
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        <Icon className="w-5 h-5" />
+                      </a>
+                      {idx < arr.length - 1 && (
+                        <span className="text-gray-400 px-2">|</span>
+                      )}
+                    </div>
+                  )
+                )}
               </div>
             </div>
 

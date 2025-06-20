@@ -9,9 +9,9 @@ const Team = () => {
       image: "/team/carla.jpg",
     },
     {
-      name: "Tanveer Ahmed",
-      role: "UI/UX Designer",
-      image: "/images/tanveer.jpeg",
+      name: "Abdul Latef Sulami",
+      role: "CEO",
+      image: "/images/ceo.jpeg",
     },
     {
       name: "Jocelyn Septimus",
