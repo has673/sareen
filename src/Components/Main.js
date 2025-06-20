@@ -34,7 +34,12 @@ const Main = () => {
               href="#"
               className="flex items-center bg-[#252B42] text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#1e1e30] transition"
             >
-              <Image src="/images/play.png" width={35} height={38}></Image>
+              <Image
+                src="/images/play.png"
+                width={35}
+                height={38}
+                alt="pla"
+              ></Image>
               <div className="text-left">
                 <p className="text-xs">Download on the</p>
                 <p className="text-sm font-semibold">Google Play</p>
@@ -46,7 +51,12 @@ const Main = () => {
               href="#"
               className="flex items-center bg-[#252B42] text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#1e1e30] transition"
             >
-              <Image src="/images/apple.png" width={35} height={38}></Image>
+              <Image
+                src="/images/apple.png"
+                width={35}
+                height={38}
+                alt="apple"
+              ></Image>
               <div className="text-left">
                 <p className="text-xs">Download on the</p>
                 <p className="text-sm font-semibold">App Store</p>

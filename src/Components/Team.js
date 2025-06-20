@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -43,11 +44,12 @@ const Team = () => {
               style={{ boxShadow: " 0px 1px 10px 0px #0000001A" }}
             >
               <div className="flex justify-center mb-4">
-                <div className="rounded-full p-1 border-4 border-[#007BFF]">
-                  <img
+                <div className="rounded-full p-1 border-4 border-[#007BFF] h-24 w-24 relative">
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="h-24 w-24 rounded-full object-cover"
+                    fill
+                    className=" rounded-full object-cover"
                   />
                 </div>
               </div>
