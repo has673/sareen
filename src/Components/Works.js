@@ -71,7 +71,7 @@ export default function Works() {
             <div className="z-10">
               <div className="relative z-10">
                 <Image
-                  src="/images/works.PNG"
+                  src="/images/works.png"
                   alt="App Mockup"
                   width={390}
                   height={500}
