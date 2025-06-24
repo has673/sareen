@@ -27,9 +27,6 @@ export default function Header() {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link href="/login" className="text-sm text-blue-600 hover:underline">
-            Log In
-          </Link>
           <Link href="/get-started">
             <button className="bg-[#007BFF] hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-lg">
               Get Started

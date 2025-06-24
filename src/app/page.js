@@ -7,7 +7,7 @@ import Works from "@/Components/Works";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Header />
       <Main />
       <Works />
