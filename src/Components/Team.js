@@ -22,8 +22,8 @@ const Team = () => {
   ];
 
   return (
-    <div className="w-full" id="team">
-      <h1 className="text-[#232233] font-bold text-3xl text-center my-3">
+    <div className="w-full bg-white" id="team">
+      <h1 className="text-[#232233] font-bold text-3xl text-center my-3 ">
         Our Creative team
       </h1>
       <div className="flex justify-center px-4 mt-3">
