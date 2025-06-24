@@ -64,14 +64,6 @@ export default function Header() {
           </div>
 
           <div className="flex justify-center gap-x-4">
-            {" "}
-            <Link
-              href="/login"
-              onClick={() => setMenuOpen(false)}
-              className="text-blue-600 flex items-center"
-            >
-              Log In
-            </Link>
             <Link href="/get-started" onClick={() => setMenuOpen(false)}>
               <button className="bg-blue-600 hover:bg-blue-700 text-white  py-2 rounded p-2">
                 Get Started
