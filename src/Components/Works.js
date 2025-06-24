@@ -56,10 +56,10 @@ export default function Works() {
                   >
                     {f.id}
                   </div>
-                  <h3 className="text-lg md:text-xl font-semibold">
+                  <h3 className="text-base text-[#252B42] font-bold">
                     {f.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base">{f.desc}</p>
+                  <p className="text-[#737373] text-sm ">{f.desc}</p>
                 </div>
               ))}
           </div>
@@ -82,7 +82,7 @@ export default function Works() {
           </div>
 
           {/* Right Features */}
-          <div className="flex flex-col gap-12 w-full lg:w-1/4 text-center lg:text-left">
+          <div className="flex flex-col  items-center justify-center gap-12 w-full lg:w-1/4 text-center lg:text-left">
             {features
               .filter((_, i) => i === 1 || i === 3)
               .map((f) => (
@@ -90,10 +90,10 @@ export default function Works() {
                   <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] rounded-full mx-auto lg:mx-0">
                     {f.id}
                   </div>
-                  <h3 className="text-lg md:text-xl font-semibold">
+                  <h3 className="text-base text-[#252B42] font-bold">
                     {f.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base max-w-[200px]">
+                  <p className="text-[#737373] text-sm  max-w-[200px] ">
                     {f.desc}
                   </p>
                 </div>

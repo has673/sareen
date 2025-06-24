@@ -77,7 +77,7 @@ const Main = () => {
             alt="phone"
             width={60}
             height={60}
-            className="absolute md:right-10  md:block"
+            className="absolute md:right-10 hidden md:block"
           />
         </div>
       </div>
