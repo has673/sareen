@@ -12,7 +12,7 @@ import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full">
+    <footer className="w-full" id="contact">
       {/* Contact Section */}
       {/* Contact Section */}
       <div className="py-8 bg-[#F9FAFB] relative">
