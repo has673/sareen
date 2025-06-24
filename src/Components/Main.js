@@ -28,14 +28,14 @@ const Main = () => {
           <span className="text-[#373737] text-2xl font-normal ">
             Real-time delivery, effortless experience
           </span>
-          <div className="flex gap-4 flex-wrap md:mt-52 px-28">
+          <div className="flex gap-4 flex-wrap justify-center md:justify-start md:mt-52 md:px-28">
             {/* Google Play */}
             <a
               href="#"
               className="flex items-center bg-[#252B42] text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#1e1e30] transition"
             >
               <div className="relative w-8 h-9">
-                <Image src="/images/play.png" fill alt="pla"></Image>
+                <Image src="/images/Vector.png" fill alt="pla"></Image>
               </div>
               <div className="text-left ml-3">
                 <p className="text-xs">Download on the</p>
@@ -64,13 +64,13 @@ const Main = () => {
         </div>
 
         {/* Image Section */}
-        <div>
+        <div className="flex justify-center">
           <Image
             src="/images/screen.png"
             height={600}
             width={250}
             alt="screen"
-            className="object-contain "
+            className="object-contain flex justify-center "
           />
         </div>
       </div>

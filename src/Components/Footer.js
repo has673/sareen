@@ -8,6 +8,7 @@ import {
   Youtube,
 } from "lucide-react";
 import Image from "next/image";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -131,7 +132,7 @@ const Footer = () => {
               <span className="w-4 h-4 border border-gray-400 rounded-full flex items-center justify-center">
                 <span className="text-xs">©</span>
               </span>
-              Copyright 2021 Orjomedia. All Right Reserved.
+              Copyright 2025 Sareen. All Right Reserved.
             </p>
           </div>
         </div>
