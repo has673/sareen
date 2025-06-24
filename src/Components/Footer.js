@@ -65,7 +65,7 @@ const Footer = () => {
                 nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
               </p>
               <div className="flex gap-4 pt-2">
-                {[Facebook, Instagram, Twitter, Youtube].map(
+                {[FaTiktok, Instagram, Twitter, Youtube].map(
                   (Icon, idx, arr) => (
                     <div className="flex items-center gap-x-2" key={idx}>
                       <a
