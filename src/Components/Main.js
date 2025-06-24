@@ -72,6 +72,13 @@ const Main = () => {
             alt="screen"
             className="object-contain flex justify-center "
           />
+          <Image
+            src="/images/chat.png" // ← replace with your image path
+            alt="phone"
+            width={60}
+            height={60}
+            className="absolute md:right-10  md:block"
+          />
         </div>
       </div>
     </div>

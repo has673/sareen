@@ -7,17 +7,17 @@ const Team = () => {
     {
       name: "Carla Press",
       role: "App Developer",
-      image: "/team/carla.jpg",
+      image: "/images/jane.jpg",
     },
     {
       name: "Abdul Latef Sulami",
       role: "CEO",
-      image: "/images/ceo.jpeg",
+      image: "/images/john.jpg",
     },
     {
       name: "Jocelyn Septimus",
       role: "Website Developer",
-      image: "/team/jocelyn.jpg",
+      image: "/images/ann.png",
     },
   ];
 
@@ -34,7 +34,6 @@ const Team = () => {
           tempor, ac nunc libero urna, feugiat.
         </p>
       </div>
-
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3 sm:grid-cols-2">
           {teamMembers.map((member, idx) => (
@@ -44,7 +43,7 @@ const Team = () => {
               style={{ boxShadow: " 0px 1px 10px 0px #0000001A" }}
             >
               <div className="flex justify-center mb-4">
-                <div className="rounded-full p-1 border-4 border-[#007BFF] h-24 w-24 relative">
+                <div className="rounded-full p-1 border-2 border-[#007BFF] h-30 w-30 relative">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -53,7 +52,7 @@ const Team = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-3xl font-bold uppercase text-[#232233]">
+              <h3 className="text-2xl font-bold uppercase text-[#232233]">
                 {member.name}
               </h3>
               <p className="text-xl font-semibold text-[#6C6C72] mb-3">

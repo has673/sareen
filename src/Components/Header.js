@@ -48,32 +48,39 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-4 pb-4 space-y-3 text-sm text-gray-700">
-          <a href="Home" onClick={() => setMenuOpen(false)}>
-            Home
-          </a>
-          <a href="#how-it-works" onClick={() => setMenuOpen(false)}>
-            How It works
-          </a>
-          <a href="#team" onClick={() => setMenuOpen(false)}>
-            Team
-          </a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>
-            Contact
-          </a>
-          <hr />
-          <Link
-            href="/login"
-            onClick={() => setMenuOpen(false)}
-            className="text-blue-600"
-          >
-            Log In
-          </Link>
-          <Link href="/get-started" onClick={() => setMenuOpen(false)}>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white w-full py-2 rounded">
-              Get Started
-            </button>
-          </Link>
+        <div className="md:hidden bg-white border-t border-gray-200 px-4 pb-4 space-y-3 text-sm text-gray-700 ">
+          <div className="flex justify-center gap-x-3 py-2">
+            {" "}
+            <a href="Home" onClick={() => setMenuOpen(false)}>
+              Home
+            </a>
+            <a href="#how-it-works" onClick={() => setMenuOpen(false)}>
+              How It works
+            </a>
+            <a href="#team" onClick={() => setMenuOpen(false)}>
+              Team
+            </a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
+              Contact
+            </a>
+            <hr />
+          </div>
+
+          <div className="flex justify-center gap-x-4">
+            {" "}
+            <Link
+              href="/login"
+              onClick={() => setMenuOpen(false)}
+              className="text-blue-600 flex items-center"
+            >
+              Log In
+            </Link>
+            <Link href="/get-started" onClick={() => setMenuOpen(false)}>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white  py-2 rounded p-2">
+                Get Started
+              </button>
+            </Link>
+          </div>
         </div>
       )}
     </header>
