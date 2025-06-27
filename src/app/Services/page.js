@@ -1,3 +1,4 @@
+import FeatureCard from "@/Components/FeatureCard";
 import OurWorks from "@/Components/OurWorks";
 import Image from "next/image";
 import React from "react";
@@ -10,7 +11,42 @@ const Services = () => {
         <span className="text-2xl ">\ Services \</span>
         <h4 className="text-[40px] ">Our Expertice</h4>
       </div>
-      <div className="flex justify-center md:0 px-3">
+      <div className="w-full">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-6 max-w-6xl mx-auto justify-items-center">
+          {" "}
+          <FeatureCard
+            icon="/web.png"
+            title="Web Design / Development"
+            description="It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+          />
+          <FeatureCard
+            icon="/ui.png"
+            title="UI/UX Design"
+            description="It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+          />
+          <FeatureCard
+            icon="/mig.png"
+            title="Website Migration"
+            description="It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+          />
+          <FeatureCard
+            icon="/hub.png"
+            title="HubSpot Integration"
+            description="It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+          />
+          <FeatureCard
+            icon="/web.png"
+            title="Web Design / Development"
+            description="It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+          />
+          <FeatureCard
+            icon="/email.png"
+            title="Email Marketing"
+            description="It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+          />
+        </div>
+      </div>
+      <div className="flex justify-center md:pt-24 md:pb-12  pt-12 pb-6 px-3">
         {" "}
         <div className="relative w-300 h-100 md:w-[945px] md:h-[300px] rounded-[10px] overflow-hidden ">
           {/* Background Image */}

@@ -14,6 +14,7 @@ const OurWorks = () => {
         <div className="relative md:w-[556px] md:h-[496px] w-[300px] h-[280px] flex-shrink-0 ">
           <Image
             src="/images/people.png"
+            alt="people"
             fill
             className="object-cover rounded-xl"
           />
