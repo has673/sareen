@@ -26,7 +26,7 @@ const features = [
 
 export default function Works() {
   return (
-    <div className="bg-white px-4 py-10" id="how-it-works">
+    <div className="bg-white px-4 py-10">
       {/* Heading */}
       <h1 className="text-center text-[#252B42] text-3xl md:text-4xl font-normal">
         How Sareen Works

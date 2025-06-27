@@ -3,7 +3,7 @@ import React from "react";
 import { Apple, Play } from "lucide-react";
 const Main = () => {
   return (
-    <div className="relative w-full" id="Home">
+    <div className="relative w-full">
       {/* Background Image with overlay color */}
       <div
         className="absolute inset-0 bg-cover bg-center"

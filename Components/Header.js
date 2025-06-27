@@ -16,10 +16,10 @@ export default function Header() {
         <div className="flex items-center justify-between gap-x-10">
           <Image src="/images/logo.png" alt="logo" width={80} height={80} />
           <nav className="hidden md:flex space-x-6 text-base font-medium text-[#0F172A]">
-            <a href="#Home">Home</a>
-            <a href="#how-it-works">How It works</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
+            <Link href="/">Home</Link>
+            <Link href="/Services">Services</Link>
+            <Link href="/">About Us</Link>
+            <Link href="/Contact">Contact Us</Link>
           </nav>
         </div>
 
@@ -48,18 +48,18 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-gray-200 px-4 pb-4 space-y-3 text-sm text-gray-700 ">
           <div className="flex justify-center gap-x-3 py-2">
             {" "}
-            <a href="Home" onClick={() => setMenuOpen(false)}>
+            <Link href="/" onClick={() => setMenuOpen(false)}>
               Home
-            </a>
+            </Link>
             <a href="#how-it-works" onClick={() => setMenuOpen(false)}>
               How It works
             </a>
             <a href="#team" onClick={() => setMenuOpen(false)}>
               Team
             </a>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>
-              Contact
-            </a>
+            <Link href="/Contact" onClick={() => setMenuOpen(false)}>
+              Contact Us
+            </Link>
             <hr />
           </div>
 

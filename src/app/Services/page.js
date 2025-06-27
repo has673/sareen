@@ -1,7 +1,7 @@
-import FeatureCard from "@/Components/FeatureCard";
-import OurWorks from "@/Components/OurWorks";
 import Image from "next/image";
 import React from "react";
+import FeatureCard from "../../../Components/FeatureCard";
+import OurWorks from "../../../Components/OurWorks";
 
 const Services = () => {
   return (

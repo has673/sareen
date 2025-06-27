@@ -1,6 +1,6 @@
-import Team from "@/Components/Team";
-import Testimonals from "@/Components/Testimonals";
-import Works from "@/Components/Works";
+import Team from "../../Components/Team";
+import Testimonals from "../../Components/Testimonals";
+import Works from "../../Components/Works";
 
 export default function Home() {
   return (

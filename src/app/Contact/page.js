@@ -74,7 +74,12 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <Image src="/email.png" alt="phone" width={31} height={31} />
+                <Image
+                  src="/emailblack.png"
+                  alt="phone"
+                  width={31}
+                  height={31}
+                />
                 <div className="flex flex-col text-[13px]">
                   <p className="text-black">FAX</p>
                   <span className="text-[#007BFF]">info@marcc.com.au</span>
@@ -85,7 +90,7 @@ const Contact = () => {
 
           {/* Right: Map with background */}
           <div className="w-1/3 flex-end relative">
-            <div className="relative h-[550px] w-[430px] md:top-[13%] md:left-1/3">
+            <div className="relative md:h-[550px] md:w-[430px] h-[400px]  w-[300px]  md:top-[13%] md:left-1/3">
               {" "}
               {/* move image down */}
               <Image

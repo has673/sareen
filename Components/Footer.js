@@ -28,7 +28,7 @@ const Footer = () => {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-gray-700 font-medium break-words">
-                  info@youremail.com
+                  it@sareean.com
                 </span>
               </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-gray-700 font-medium break-words">
-                  +880 321 655 9985
+                  +966 55 227 0149
                 </span>
               </div>
             </div>
