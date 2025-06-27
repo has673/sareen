@@ -51,12 +51,12 @@ export default function Header() {
             <Link href="/" onClick={() => setMenuOpen(false)}>
               Home
             </Link>
-            <a href="#how-it-works" onClick={() => setMenuOpen(false)}>
-              How It works
-            </a>
-            <a href="#team" onClick={() => setMenuOpen(false)}>
-              Team
-            </a>
+            <Link href="/Services" onClick={() => setMenuOpen(false)}>
+              Services
+            </Link>
+            <Link href="/" onClick={() => setMenuOpen(false)}>
+              About Us
+            </Link>
             <Link href="/Contact" onClick={() => setMenuOpen(false)}>
               Contact Us
             </Link>

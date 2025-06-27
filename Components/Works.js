@@ -19,8 +19,8 @@ const features = [
   },
   {
     id: 4,
-    title: "Order Sync with Salla Store",
-    desc: "Fetches orders from Salla platform",
+    title: "Sync your orders with Salla",
+    desc: "Zid and many others coming",
   },
 ];
 
@@ -49,11 +49,7 @@ export default function Works() {
               .filter((_, i) => i === 0 || i === 2)
               .map((f) => (
                 <div key={f.id}>
-                  <div
-                    className={`w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full mx-auto lg:ml-auto lg:mr-0 ${
-                      f.id === 3 ? "bg-[#007BFF] text-white" : "bg-[#CFE6FF]"
-                    }`}
-                  >
+                  <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full mx-auto lg:ml-auto lg:mr-0  bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
                     {f.id}
                   </div>
                   <h3 className="text-base text-[#252B42] font-bold">
@@ -71,7 +67,7 @@ export default function Works() {
             <div className="z-10">
               <div className="relative z-10">
                 <Image
-                  src="/images/works.png"
+                  src="/screen.png"
                   alt="App Mockup"
                   width={390}
                   height={500}
@@ -87,7 +83,7 @@ export default function Works() {
               .filter((_, i) => i === 1 || i === 3)
               .map((f) => (
                 <div key={f.id}>
-                  <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] rounded-full mx-auto lg:mx-0">
+                  <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white rounded-full mx-auto lg:mx-0 cursor-pointer">
                     {f.id}
                   </div>
                   <h3 className="text-base text-[#252B42] font-bold">
