@@ -1,6 +1,3 @@
-import Footer from "@/Components/Footer";
-import Header from "@/Components/Header";
-import Main from "@/Components/Main";
 import Team from "@/Components/Team";
 import Testimonals from "@/Components/Testimonals";
 import Works from "@/Components/Works";
@@ -8,8 +5,6 @@ import Works from "@/Components/Works";
 export default function Home() {
   return (
     <div className="bg-white">
-      <Header />
-      <Main />
       <Works />
       <div
         style={{
@@ -31,7 +26,6 @@ export default function Home() {
       </div>
       <Team />
       <Testimonals />
-      <Footer />
     </div>
   );
 }
