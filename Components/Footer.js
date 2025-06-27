@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="bg-[#007BFF] rounded-full p-3">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-gray-700 font-medium break-words">
+                <span className="text-[#232233] font-medium break-words">
                   it@sareean.com
                 </span>
               </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="bg-[#007BFF] rounded-full p-3">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-gray-700 font-medium break-words">
+                <span className="text-[#232233] font-medium break-words">
                   +966 55 227 0149
                 </span>
               </div>
@@ -87,7 +87,13 @@ const Footer = () => {
             <div className="space-y-4 mt-16">
               <h3 className="text-lg font-semibold">QUICK LINK</h3>
               <ul className="space-y-3">
-                {["About", "Features", "Screenshot", "Blog"].map((item, i) => (
+                {[
+                  "About",
+                  "Features",
+                  "Screenshot",
+                  "Blog",
+                  "Customer Care",
+                ].map((item, i) => (
                   <li key={i}>
                     <a
                       href="#"
@@ -98,6 +104,16 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
+              <span className="text-white font-normal text-[11px]  rounded-[7px] border px-4  py-1 border-[#A1A1A1]">
+                {" "}
+                Check Tab Payment
+              </span>
+              <div className="flex gap-x-6 mt-4 ">
+                <Image src="/gpay.png" alt="gpay" width={24} height={24} />
+                <Image src="/stc.png" alt="gpay" width={17} height={17} />
+                <Image src="/mada.png" alt="gpay" width={21} height={21} />
+                <Image src="/visa.png" alt="gpay" width={17} height={17} />
+              </div>
             </div>
 
             {/* Newsletter */}
