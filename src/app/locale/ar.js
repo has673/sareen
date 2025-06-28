@@ -197,6 +197,9 @@ const ar = {
       text: "نُطور منتجات رقمية.",
     },
   },
+  select_role: "اختر الدور",
+  driver: "سائق",
+  store_owner: "مالك المتجر",
 };
 
 export default ar;

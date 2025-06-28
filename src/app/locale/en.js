@@ -206,6 +206,9 @@ const en = {
       text: "Build digital products ",
     },
   },
+  select_role: "Select Role",
+  driver: "Driver",
+  store_owner: "Store Owner",
 };
 
 export default en;

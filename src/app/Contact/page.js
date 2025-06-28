@@ -91,7 +91,7 @@ const Contact = () => {
 
         {/* Right: Map */}
         <div className="w-1/3 flex-end relative">
-          <div className="relative md:h-[550px] md:w-[430px] h-[400px] w-[300px] md:top-[13%] md:left-1/3">
+          <div className="relative md:h-[550px] md:w-[430px] h-[400px] w-[300px] md:top-[13%] md:left-1/3 mx-auto">
             <Image
               src="/map.png"
               alt="map"
@@ -99,6 +99,7 @@ const Contact = () => {
               className="z-10 object-cover object-top"
             />
           </div>
+
           <div className="absolute top-5 md:left-77 w-full h-full bg-[#007BFF] z-0 hidden md:block"></div>
         </div>
       </div>
