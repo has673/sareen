@@ -48,7 +48,7 @@ export default function Header() {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSwitcher />
-          <Link href="/get-started">
+          <Link href="/Role">
             <button className="bg-[#007BFF] hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-lg">
               {t.header.nav.getStarted}
             </button>
@@ -88,7 +88,7 @@ export default function Header() {
 
           <div className="flex justify-center gap-x-4">
             <LanguageSwitcher />
-            <Link href="/get-started" onClick={() => setMenuOpen(false)}>
+            <Link href="/Role" onClick={() => setMenuOpen(false)}>
               <button className="bg-blue-600 hover:bg-blue-700 text-white  py-2 rounded p-2">
                 {t.header.nav.getStarted}
               </button>
