@@ -114,7 +114,8 @@ const en = {
     email: "it@sareean.com",
     phone: "+966 55 227 0149",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.",
+      "Our app makes it easy to discover and order products from trusted vendors near you — fast, reliable, and always at your fingertips.",
+
     quickLinkTitle: "QUICK LINK",
     quickLinks: ["About", "Features", "Screenshot", "Blog", "Customer Care"],
     paymentText: "Check Tab Payment",
