@@ -124,10 +124,10 @@ const Footer = () => {
                 {t.footer.paymentText}
               </span>
               <div className={`flex gap-x-6 mt-4 `}>
-                <Image src="/gpay.png" alt="gpay" width={24} height={24} />
-                <Image src="/stc.png" alt="stc" width={20} height={20} />
-                <Image src="/mada.png" alt="mada" width={24} height={24} />
-                <Image src="/visa.svg" alt="visa" width={24} height={24} />
+                <Image src="/gpay.png" alt="gpay" width={30} height={30} />
+                <Image src="/stc.svg" alt="stc" width={38} height={38} />
+                <Image src="/mada.png" alt="mada" width={34} height={34} />
+                <Image src="/visa.png" alt="visa" width={30} height={30} />
               </div>
             </div>
 
