@@ -1,13 +1,7 @@
-import { Poppins } from "next/font/google";
+// app/layout.js
 import "./globals.css";
-import Header from "../../Components/Header";
-import Main from "../../Components/Main";
-import Footer from "../../Components/Footer";
-
-const poppins = Poppins({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-});
+import { LanguageProvider } from "./context/LanguageContext";
+import LayoutWithLanguage from "./languageLayout";
 
 export const metadata = {
   title: "Sareen",
@@ -18,11 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} bg-white`}>
-        <Header />
-        <Main />
-        {children}
-        <Footer />
+      {/* Default dir and lang here, real logic goes inside client layout */}
+      <body>
+        <LanguageProvider>
+          <LayoutWithLanguage>{children}</LayoutWithLanguage>
+        </LanguageProvider>
       </body>
     </html>
   );

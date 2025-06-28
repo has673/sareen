@@ -1,52 +1,55 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
-const Testimonals = () => {
+const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { t, language } = useLanguage();
+  const isArabic = language === "ar";
 
   const handleDotClick = (index) => {
     setActiveIndex(index);
   };
+
   const testimonials = [
     {
-      name: "Ann Lubin",
-      title: "Co-Founder",
-      image: "/images/ann.png", // Replace with actual image path
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.",
+      name: t.testimonials[0].name,
+      title: t.testimonials[0].title,
+      image: "/images/ann.png",
+      text: t.testimonials[0].text,
     },
     {
-      name: "John Doe",
-      title: "CEO",
+      name: t.testimonials[1].name,
+      title: t.testimonials[1].title,
       image: "/images/john.jpg",
-      text: "Facilisis ac erat dictum tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.",
+      text: t.testimonials[1].text,
     },
     {
-      name: "Jane Smith",
-      title: "Designer",
+      name: t.testimonials[2].name,
+      title: t.testimonials[2].title,
       image: "/images/jane.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ac erat dictum tincidunt rhoncus.",
+      text: t.testimonials[2].text,
     },
   ];
+
   return (
     <div
+      className={isArabic ? "text-right" : ""}
       style={{
-        background: " linear-gradient(90deg, #E1F4FF 0%, #4CBAFA 100%)",
+        background: "linear-gradient(90deg, #E1F4FF 0%, #4CBAFA 100%)",
       }}
     >
       <h1 className="text-white font-bold text-3xl text-center pt-3 md:pt-16">
-        Our Happy Customers
+        {t.testimonialsHeading}
       </h1>
       <div className="flex justify-center px-4 mt-3 py-4">
         <p className="text-white font-normal text-base text-center max-w-[600px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
-          ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
-          amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
-          tempor, ac nunc libero urna, feugiat.
+          {t.testimonialsSubheading}
         </p>
       </div>
-      <div className=" py-16 flex flex-col items-center">
+
+      <div className="py-16 flex flex-col items-center">
         <div className="relative w-full max-w-4xl overflow-hidden">
           <div
             className="flex transition-transform duration-500"
@@ -95,4 +98,4 @@ const Testimonals = () => {
   );
 };
 
-export default Testimonals;
+export default Testimonials;

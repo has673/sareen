@@ -1,46 +1,37 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Team = () => {
-  const teamMembers = [
-    {
-      name: "Carla Press",
-      role: "App Developer",
-      image: "/images/jane.jpg",
-    },
-    {
-      name: "Abdul Latef Sulami",
-      role: "CEO",
-      image: "/images/john.jpg",
-    },
-    {
-      name: "Jocelyn Septimus",
-      role: "Website Developer",
-      image: "/images/ann.png",
-    },
-  ];
+  const { t, language } = useLanguage();
+  const isArabic = language === "ar";
+
+  const teamMembers = t.team.members;
 
   return (
-    <div className="w-full bg-white" id="team">
-      <h1 className="text-[#232233] font-bold text-3xl text-center my-3 ">
-        Our Creative team
+    <div
+      className={`w-full bg-white ${isArabic ? "text-right" : ""}`}
+      id="team"
+    >
+      <h1 className="text-[#232233] font-bold text-3xl text-center my-3">
+        {t.team.heading}
       </h1>
+
       <div className="flex justify-center px-4 mt-3">
         <p className="text-[#6C6C72] font-normal text-base text-center max-w-[600px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
-          ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
-          amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
-          tempor, ac nunc libero urna, feugiat.
+          {t.team.subheading}
         </p>
       </div>
+
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3 sm:grid-cols-2">
           {teamMembers.map((member, idx) => (
             <div
               key={idx}
-              className="bg-white  rounded-xl p-6 text-center  hover:shadow-md transition duration-300"
-              style={{ boxShadow: " 0px 1px 10px 0px #0000001A" }}
+              className="bg-white rounded-xl p-6 text-center hover:shadow-md transition duration-300"
+              style={{ boxShadow: "0px 1px 10px 0px #0000001A" }}
             >
               <div className="flex justify-center mb-4">
                 <div className="rounded-full p-1 border-2 border-[#007BFF] h-30 w-30 relative">
@@ -48,7 +39,7 @@ const Team = () => {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className=" rounded-full object-cover"
+                    className="rounded-full object-cover"
                   />
                 </div>
               </div>
@@ -59,22 +50,20 @@ const Team = () => {
                 {member.role}
               </p>
               <p className="text-base font-normal text-[#6C6C72] mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-                nunc ante velit vitae. Est tellus vitae.
+                {member.bio}
               </p>
               <div className="flex justify-center space-x-4 text-gray-600 text-lg">
-                <a href="#" className="border-r border-[#6C6C72] pr-2">
-                  <FaFacebookF />
-                </a>
-                <a href="#" className="border-r border-[#6C6C72] pr-2">
-                  <FaInstagram />
-                </a>
-                <a href="#" className="border-r border-[#6C6C72] pr-2">
-                  <FaTwitter />
-                </a>
-                <a href="#" className="border-r border-[#6C6C72] pr-2">
-                  <FaYoutube />
-                </a>
+                {[FaFacebookF, FaInstagram, FaTwitter, FaYoutube].map(
+                  (Icon, i) => (
+                    <a
+                      href="#"
+                      key={i}
+                      className="border-r border-[#6C6C72] pr-2 last:border-none"
+                    >
+                      <Icon />
+                    </a>
+                  )
+                )}
               </div>
             </div>
           ))}
