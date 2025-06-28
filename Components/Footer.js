@@ -127,7 +127,7 @@ const Footer = () => {
                 <Image src="/gpay.png" alt="gpay" width={24} height={24} />
                 <Image src="/stc.png" alt="stc" width={20} height={20} />
                 <Image src="/mada.png" alt="mada" width={24} height={24} />
-                <Image src="/visa.png" alt="visa" width={24} height={24} />
+                <Image src="/visa.svg" alt="visa" width={24} height={24} />
               </div>
             </div>
 
