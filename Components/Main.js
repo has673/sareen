@@ -6,6 +6,7 @@ import React from "react";
 
 const Main = () => {
   const { t, language } = useLanguage();
+  const isArabic = language === "ar";
 
   return (
     <div className="relative w-full">
@@ -38,7 +39,7 @@ const Main = () => {
           </span>
 
           <div
-            className={`flex gap-4 flex-wrap justify-center md:mt-52 md:px-28 ${
+            className={`flex gap-4 flex-wrap justify-center md:mt-32 md:px-28 ${
               language === "ar" ? "md:justify-end" : "md:justify-start"
             }`}
           >
@@ -101,7 +102,9 @@ const Main = () => {
             alt="chat"
             width={60}
             height={60}
-            className={`absolute md:right-10 hidden md:block } `}
+            className={`fixed md:right-10 hidden md:block ${
+              isArabic && "left-10"
+            } } `}
           />
         </div>
       </div>

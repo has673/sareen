@@ -28,7 +28,7 @@ export default function Header() {
             language === "ar" ? "flex-row-reverse" : "flex-row"
           }`}
         >
-          <Image src="/images/logo.png" alt="logo" width={80} height={80} />
+          <Image src="/logo.png" alt="logo" width={80} height={80} />
           <nav
             className={`hidden md:flex text-base font-medium text-[#0F172A] ${
               language === "ar"
