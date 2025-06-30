@@ -170,12 +170,6 @@ const en = {
       "Meet the passionate minds behind our success. We believe in collaboration, innovation, and delivering the best to our clients.",
     members: [
       {
-        name: "Carla Press",
-        role: "App Developer",
-        image: "/images/jane.jpg",
-        bio: "Carla brings creativity and code together to craft sleek and scalable mobile applications.",
-      },
-      {
         name: "Abdul Latef Sulami",
         role: "CEO",
         image: "/images/john.jpg",

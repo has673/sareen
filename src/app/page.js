@@ -24,7 +24,9 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       <Team />
+
       <Testimonals />
     </div>
   );

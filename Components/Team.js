@@ -26,11 +26,11 @@ const Team = () => {
       </div>
 
       <section className="py-12 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3 sm:grid-cols-2">
+        <div className="flex md:flex-row flex-col justify-center gap-x-12 px-4 gap-y-4 ">
           {teamMembers.map((member, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl p-6 text-center hover:shadow-md transition duration-300"
+              className="bg-white rounded-xl p-6 text-center hover:shadow-md transition duration-300 w-90"
               style={{ boxShadow: "0px 1px 10px 0px #0000001A" }}
             >
               <div className="flex justify-center mb-4">
