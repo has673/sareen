@@ -68,17 +68,24 @@ export default function Works() {
               language === "ar" ? "lg:items-end lg:text-right" : "lg:text-left"
             }`}
           >
-            {[features[1], features[3]].map((f, i) => (
-              <div key={i}>
-                <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
-                  {f.no}
-                </div>
-                <h3 className="text-base text-[#252B42] font-bold md:my-4">
-                  {f.title}
-                </h3>
-                <p className="text-[#737373] text-sm ">{f.desc}</p>
+            <div>
+              <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
+                {features[1].no}
               </div>
-            ))}
+              <h3 className="text-base text-[#252B42] font-bold md:my-4">
+                {features[1].title}
+              </h3>
+              <p className="text-[#737373] text-sm "> {features[1].desc}</p>
+            </div>
+            <div className={`${language === "en" && " md: pr-13"}`}>
+              <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
+                {features[3].no}
+              </div>
+              <h3 className="text-base text-[#252B42] font-bold md:my-4">
+                {features[3].title}
+              </h3>
+              <p className="text-[#737373] text-sm "> {features[3].desc}</p>
+            </div>
           </div>
         </div>
       </section>
