@@ -37,10 +37,10 @@ export default function Works() {
                 <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full mx-auto lg:ml-auto lg:mr-0  bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
                   {i * 2 + 1}
                 </div>
-                <h3 className="text-base text-[#252B42] font-bold">
+                <h3 className="text-base text-[#252B42] font-bold  md:my-4 ">
                   {f.title}
                 </h3>
-                <p className="text-[#737373] text-sm">{f.desc}</p>
+                <p className="text-[#737373] text-sm  ">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -65,17 +65,30 @@ export default function Works() {
               language === "ar" ? "lg:text-right" : "lg:text-left"
             }`}
           >
-            {[features[1], features[3]].map((f, i) => (
-              <div key={i}>
-                <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white rounded-full mx-auto lg:mx-0 cursor-pointer">
-                  {i * 2 + 2}
-                </div>
-                <h3 className="text-base text-[#252B42] font-bold">
-                  {f.title}
-                </h3>
-                <p className="text-[#737373] text-sm max-w-[200px]">{f.desc}</p>
+            <div className="md:mr-4">
+              <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white rounded-full mx-auto lg:mx-0 cursor-pointer ">
+                2
               </div>
-            ))}
+              <h3 className="text-base text-[#252B42] font-bold  md:my-4 ">
+                {features[1].title}
+              </h3>
+              <p className="text-[#737373] text-sm max-w-[200px]">
+                {" "}
+                {features[1].desc}
+              </p>
+            </div>
+            <div>
+              <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white rounded-full mx-auto lg:mx-0 cursor-pointer">
+                4
+              </div>
+              <h3 className="text-base text-[#252B42] font-bold  md:my-4 ">
+                {features[3].title}
+              </h3>
+              <p className="text-[#737373] text-sm max-w-[200px]">
+                {" "}
+                {features[3].desc}
+              </p>
+            </div>
           </div>
         </div>
       </section>

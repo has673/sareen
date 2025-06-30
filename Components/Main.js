@@ -39,7 +39,7 @@ const Main = () => {
           </span>
 
           <div
-            className={`flex gap-4 flex-wrap justify-center md:mt-32 md:px-28 ${
+            className={`flex gap-4 flex-wrap justify-center md:mt-28 md:px-28 ${
               language === "ar" ? "md:justify-end" : "md:justify-start"
             }`}
           >

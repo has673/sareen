@@ -78,14 +78,14 @@ const en = {
     },
   },
   works: {
-    heading: "How Sareen Works",
+    heading: "Track Shipments",
     subtitle1:
       "Embrace life’s vastness, venture forth, and discover the wonders waiting beyond.",
     subtitle2: "The world beckons; seize its grand offerings now!",
     features: [
       {
         title: "Real-time Tracking",
-        desc: "Track your ride’s progress in real-time.",
+        desc: "Let customers and store owner track the exact delivery status using an interactive shipment tracker",
       },
       {
         title: "Secure Payments",
@@ -151,17 +151,17 @@ const en = {
     {
       name: "Ann Lubin",
       title: "Co-Founder, TechX",
-      text: "Working with the team was a fantastic experience. They delivered everything on time with incredible attention to detail.",
+      text: "Saraeen makes delivery simple. Orders sync instantly, and the nearest driver is notified. No more manual coordination—everything runs smoothly.",
     },
     {
       name: "John Doe",
       title: "CEO, MarketHub",
-      text: "Their support and expertise helped us scale our product faster than we ever thought possible.",
+      text: "With Saraeen, deliveries are automatic. Orders sync and drivers get notified—no extra steps needed.",
     },
     {
       name: "Jane Smith",
       title: "Lead Designer, StudioCraft",
-      text: "A seamless process from start to finish. Highly recommended for any business looking for quality development.",
+      text: "Saraeen handles everything—from order sync to driver alerts. It's fast, simple, and worry-free.",
     },
   ],
   team: {
@@ -203,6 +203,8 @@ const en = {
   select_role: "Select Role",
   driver: "Driver",
   store_owner: "Store Owner",
+  app: "How to use the app perfectly",
+  app1: "You can easily browse products, customize your order, and get fast delivery through our mobile app. Enjoy a seamless experience designed for your convenience.",
 };
 
 export default en;
