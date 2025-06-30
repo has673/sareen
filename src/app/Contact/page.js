@@ -64,7 +64,7 @@ const Contact = () => {
           </form>
 
           {/* Contact Info */}
-          <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-4 text-sm text-gray-700">
+          <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap md:justify-between gap-4 text-sm text-gray-700">
             <div className="flex items-center gap-2">
               <Image src="/phone.png" alt="phone" width={31} height={31} />
               <div className="flex flex-col text-[13px]">
@@ -73,7 +73,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
               <Image src="/emailblack.png" alt="email" width={31} height={31} />
               <div className="flex flex-col text-[13px]">
                 <p className="text-black">{t.contact.email}</p>
