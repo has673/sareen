@@ -59,7 +59,7 @@ const en = {
     tag: "What We Do ",
     heading: "We Develope Product That People Love to Use.",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.",
+      "Our platform offers a seamless and intuitive experience, designed to keep users focused and in control. Whether you're placing orders, tracking deliveries in real-time, or managing tasks, the clean and user-friendly interface ensures a smooth journey from start to finish.",
     vision: {
       title: "Our Vision",
       text: "It is a long established fact that...",
