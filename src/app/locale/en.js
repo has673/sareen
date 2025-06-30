@@ -11,32 +11,24 @@ const en = {
   },
   // ...existing
   services: {
-    headerTop: "\\ Services \\",
+    headerTop: " Services ",
     headerTitle: "Our Expertice",
     features: [
       {
-        title: "Web Design / Development",
-        desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+        title: "Track Shipments in Real -Time",
+        desc: "Customers and store owners can view the exact delivery route on a real-time map—from pickup to drop-off. This feature improves transparency, ",
       },
       {
-        title: "UI/UX Design",
-        desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+        title: "Secure payment Integration",
+        desc: "Aith the Salla Store platform. Whether it's a one-time purchase or a subscription-based service, transactions.",
       },
       {
-        title: "Website Migration",
-        desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+        title: "Order Sync with Salla Store",
+        desc: "Whenever a customer places an order through the Salla Store, it is instantly synced into the Saraeen app without any manual input. ",
       },
       {
-        title: "HubSpot Integration",
-        desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
-      },
-      {
-        title: "Web Design / Development",
-        desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
-      },
-      {
-        title: "Email Marketing",
-        desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+        title: "Instant Driver Notification",
+        desc: "As soon as a store confirms an order is prepared, the system automatically sends a real-time notification to nearby available drivers.",
       },
     ],
     quote:
@@ -64,7 +56,7 @@ const en = {
     email: "Email",
   },
   ourWorks: {
-    tag: "\\ What We Do \\",
+    tag: "What We Do ",
     heading: "We Develope Product That People Love to Use.",
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.",
@@ -84,18 +76,23 @@ const en = {
     subtitle2: "The world beckons; seize its grand offerings now!",
     features: [
       {
+        no: "1",
         title: "Real-time Tracking",
         desc: "Let customers and store owner track the exact delivery status using an interactive shipment tracker",
       },
       {
+        no: "2",
         title: "Secure Payments",
         desc: "Safe and seamless payment options.",
       },
       {
+        no: "3",
         title: "Driver Assignment Automation",
         desc: "Instantly notifies and assigns the nearest available driver to begin the delivery process",
       },
+
       {
+        no: "4",
         title: "Sync your orders with Salla",
         desc: "Zid and many others coming",
       },
@@ -187,7 +184,7 @@ const en = {
   // en.json
 
   ourWorks: {
-    tagline: "\\ What We Do \\",
+    tagline: " What We Do",
     heading: "We Develop Products That People Love to Use",
     description:
       "Our team builds impactful and user-centric digital solutions that simplify lives and enhance business value. With strong focus on usability and performance, we turn ideas into scalable products.",

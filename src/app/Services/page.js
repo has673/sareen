@@ -30,10 +30,10 @@ const Services = () => {
               key={i}
               icon={
                 [
-                  "/web.png",
-                  "/ui.png",
-                  "/mig.png",
-                  "/hub.png",
+                  "/box.png",
+                  "/secure.png",
+                  "/shopblue.png",
+                  "/app.png",
                   "/web.png",
                   "/email.png",
                 ][i]

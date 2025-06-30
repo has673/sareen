@@ -30,16 +30,24 @@ const Main = () => {
         }`}
       >
         {/* Text Section */}
-        <div className="md:pr-8 text-center md:text-left">
+        <div
+          className={` text-center md:text-left ${
+            language === "ar" ? "pl-8" : "md:pr-8"
+          }`}
+        >
           <h1 className="md:text-[41px] text-3xl text-[#007BFF] font-semibold max-w-xl leading-tight mb-3">
             {t.title}
           </h1>
-          <span className="text-[#373737] text-2xl font-normal ">
+          <span
+            className={`text-[#373737] text-2xl font-normal ${
+              language === "ar" && "md:pl-32"
+            }`}
+          >
             {t.subtitle}
           </span>
 
           <div
-            className={`flex gap-4 flex-wrap justify-center md:mt-28 md:px-28 ${
+            className={`flex gap-4 flex-wrap justify-center md:mt-20 md:px-28 ${
               language === "ar" ? "md:justify-end" : "md:justify-start"
             }`}
           >

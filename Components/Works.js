@@ -24,23 +24,26 @@ export default function Works() {
       </p>
 
       {/* Main Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+      <section
+        className="py-16 min-h-screen flex items-center justify-center"
+        dir={language === "ar" ? "rtl" : "ltr"}
+      >
+        <div className="mx-auto flex flex-col lg:flex-row items-center">
           {/* Left Features */}
           <div
-            className={`flex flex-col gap-12 w-full lg:w-1/4 text-center ${
-              language === "ar" ? "lg:text-left" : "lg:text-right"
+            className={`flex flex-col items-center justify-center gap-12 w-full lg:w-1/4 text-center ${
+              language === "ar" ? "lg:items-end lg:text-right" : "lg:text-left"
             }`}
           >
             {[features[0], features[2]].map((f, i) => (
               <div key={i}>
-                <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full mx-auto lg:ml-auto lg:mr-0  bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
-                  {i * 2 + 1}
+                <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
+                  {f.no}
                 </div>
-                <h3 className="text-base text-[#252B42] font-bold  md:my-4 ">
+                <h3 className="text-base text-[#252B42] font-bold md:my-4">
                   {f.title}
                 </h3>
-                <p className="text-[#737373] text-sm  ">{f.desc}</p>
+                <p className="text-[#737373] text-sm">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -62,33 +65,20 @@ export default function Works() {
           {/* Right Features */}
           <div
             className={`flex flex-col items-center justify-center gap-12 w-full lg:w-1/4 text-center ${
-              language === "ar" ? "lg:text-right" : "lg:text-left"
+              language === "ar" ? "lg:items-end lg:text-right" : "lg:text-left"
             }`}
           >
-            <div className="md:mr-4">
-              <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white rounded-full mx-auto lg:mx-0 cursor-pointer ">
-                2
+            {[features[1], features[3]].map((f, i) => (
+              <div key={i}>
+                <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 rounded-full bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white cursor-pointer">
+                  {f.no}
+                </div>
+                <h3 className="text-base text-[#252B42] font-bold md:my-4">
+                  {f.title}
+                </h3>
+                <p className="text-[#737373] text-sm ">{f.desc}</p>
               </div>
-              <h3 className="text-base text-[#252B42] font-bold  md:my-4 ">
-                {features[1].title}
-              </h3>
-              <p className="text-[#737373] text-sm max-w-[200px]">
-                {" "}
-                {features[1].desc}
-              </p>
-            </div>
-            <div>
-              <div className="w-12 h-12 flex items-center justify-center text-blue-500 text-2xl md:text-3xl font-bold mb-2 bg-[#CFE6FF] hover:bg-[#007BFF] hover:text-white rounded-full mx-auto lg:mx-0 cursor-pointer">
-                4
-              </div>
-              <h3 className="text-base text-[#252B42] font-bold  md:my-4 ">
-                {features[3].title}
-              </h3>
-              <p className="text-[#737373] text-sm max-w-[200px]">
-                {" "}
-                {features[3].desc}
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -69,21 +69,15 @@ const Contact = () => {
               <Image src="/phone.png" alt="phone" width={31} height={31} />
               <div className="flex flex-col text-[13px]">
                 <p className="text-black">{t.contact.phone}</p>
-                <span className="text-[#007BFF] ">03 5432 1234</span>
+                <span className="text-[#007BFF] ">+966 55 227 0149</span>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Image src="/fax.png" alt="fax" width={31} height={31} />
-              <div className="flex flex-col text-[13px]">
-                <p className="text-black">{t.contact.fax}</p>
-                <span className="text-[#007BFF]">03 5432 1234</span>
-              </div>
-            </div>
+
             <div className="flex items-center gap-2">
               <Image src="/emailblack.png" alt="email" width={31} height={31} />
               <div className="flex flex-col text-[13px]">
                 <p className="text-black">{t.contact.email}</p>
-                <span className="text-[#007BFF]">info@marcc.com.au</span>
+                <span className="text-[#007BFF]">it@sareean.com</span>
               </div>
             </div>
           </div>
