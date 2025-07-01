@@ -33,9 +33,9 @@ const Services = () => {
                   "/box.png",
                   "/secure.png",
                   "/shopblue.png",
-                  "/app.png",
-                  "/web.png",
-                  "/email.png",
+                  "/truckblue.png",
+                  "/gps.png",
+                  "/notify.png",
                 ][i]
               }
               title={feature.title}

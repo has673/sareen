@@ -30,6 +30,14 @@ const en = {
         title: "Instant Driver Notification",
         desc: "As soon as a store confirms an order is prepared, the system automatically sends a real-time notification to nearby available drivers.",
       },
+      {
+        title: "Live GPS Navigation",
+        desc: "Built - in maps provide drivers with real time directions from the store to the customer’s location - ensuring fast and accurate deliveries.",
+      },
+      {
+        title: "Notifications & Alert ",
+        desc: "Get real-time push notifications at every step - when orders are received, assigned to a driver, pickup up, and successfully delivered.",
+      },
     ],
     quote:
       "Some of the history of our company is that we are catching up through video.",
