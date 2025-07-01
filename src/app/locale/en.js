@@ -11,8 +11,7 @@ const en = {
   },
   // ...existing
   services: {
-    headerTop: " Services ",
-    headerTitle: "Our Expertice",
+    headerTitle: "Explore the Saraeen Features",
     features: [
       {
         title: "Track Shipments in Real -Time",
@@ -40,7 +39,7 @@ const en = {
       },
     ],
     quote:
-      "Some of the history of our company is that we are catching up through video.",
+      "At Saraeen, we're redefining product delivery — connecting storefronts with customers in real time.",
     cta: "Get In Touch",
   },
   contact: {
@@ -65,16 +64,16 @@ const en = {
   },
   ourWorks: {
     tag: "What We Do ",
-    heading: "We Develope Product That People Love to Use.",
+    heading: "We Develop Smart Delivery Solutions for Stores and Drivers",
     description:
-      "Our platform offers a seamless and intuitive experience, designed to keep users focused and in control. Whether you're placing orders, tracking deliveries in real-time, or managing tasks, the clean and user-friendly interface ensures a smooth journey from start to finish.",
+      "At Saraeen, we bridge the gap between online stores and customers by offering a streamlined delivery system built for speed, accuracy, and ease. Our app connects store owners using the Salla platform with nearby drivers in real-time, enabling instant order syncing, automated driver assignment, and live tracking. We’re focused on making last-mile delivery smarter, faster, and more transparent — so businesses can grow, and customers receive their products on time, every time.",
     vision: {
       title: "Our Vision",
-      text: "It is a long established fact that...",
+      text: "Smart, seamless delivery across country.",
     },
     mission: {
       title: "Our Mission",
-      text: "It is a long established fact that...",
+      text: "Empowering fast, reliable order delivery.",
     },
   },
   works: {
@@ -181,9 +180,9 @@ const en = {
         bio: "Abdul leads with vision and strategy, driving growth through innovation and leadership.",
       },
       {
-        name: "Jocelyn Septimus",
-        role: "Website Developer",
-        image: "/images/ann.png",
+        name: "Haris Arif",
+        role: "Project Mananger",
+        image: "/haris.jpeg",
         bio: "Jocelyn transforms ideas into pixel-perfect websites that perform beautifully on every device.",
       },
     ],
@@ -198,11 +197,11 @@ const en = {
       "Our team builds impactful and user-centric digital solutions that simplify lives and enhance business value. With strong focus on usability and performance, we turn ideas into scalable products.",
     vision: {
       title: "Our Vision",
-      text: "Inspire innovation through design.",
+      text: "Smart, seamless delivery across country.",
     },
     mission: {
       title: "Our Mission",
-      text: "Build digital products ",
+      text: "Empowering fast, reliable order delivery.",
     },
   },
   select_role: "Select Role",

@@ -18,8 +18,7 @@ const Services = () => {
       <div
         className={`text-[#0E1F51] font-bold flex flex-col justify-center items-center py-2`}
       >
-        <span className="text-2xl">{t.services.headerTop}</span>
-        <h4 className="text-[40px]">{t.services.headerTitle}</h4>
+        <h4 className="text-[40px] md:my-10">{t.services.headerTitle}</h4>
       </div>
 
       {/* Feature Cards */}

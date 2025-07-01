@@ -23,10 +23,18 @@ const OurWorks = () => {
       >
         {/* Text Section */}
         <div className="flex flex-col justify-center md:max-w-xl text-center md:text-left">
-          <span className="text-[#354EF3] text-2xl font-bold mb-2">
+          <span
+            className={`text-black text-2xl font-bold mb-2 ${
+              isArabic && "md:ml-[80%]"
+            }`}
+          >
             {t.ourWorks.tagline}
           </span>
-          <h2 className="text-[#007BFF] text-3xl md:text-4xl font-bold leading-tight mb-4">
+          <h2
+            className={`text-[#007BFF] text-3xl md:text-4xl font-bold leading-tight mb-4 ${
+              isArabic && "md:ml-[48%] text-wrap"
+            }`}
+          >
             {t.ourWorks.heading}
           </h2>
           <p className="text-base font-medium text-[#333] mb-6">

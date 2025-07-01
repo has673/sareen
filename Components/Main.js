@@ -35,7 +35,10 @@ const Main = () => {
             language === "ar" ? "pl-8" : "md:pr-8"
           }`}
         >
-          <h1 className="md:text-[41px] text-3xl text-[#007BFF] font-semibold max-w-xl leading-tight mb-3">
+          <h1
+            className="md:text-[41px] text-3xl text-[#007BFF] font-semibold max-w-xl leading-tight mb-3"
+            dir={isArabic ? "text-right" : "text-left"}
+          >
             {t.title}
           </h1>
           <span

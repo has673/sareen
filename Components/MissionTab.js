@@ -1,6 +1,11 @@
+"use client";
+import { useLanguage } from "@/app/context/LanguageContext";
 import Image from "next/image";
 import React from "react";
+
 const MissionTab = ({ heading, image, text }) => {
+  const { t, language } = useLanguage();
+  const isArabic = language === "ar";
   return (
     <div className="bg-white rounded-[10px]  px-2 md:h-[100px] md:w-[263px]  ">
       <div className="flex md:flex-row flex-col justify-center gap-4 py-3">
@@ -8,7 +13,13 @@ const MissionTab = ({ heading, image, text }) => {
           <Image src={image} width={35} height={35} alt="icon" />
         </div>
         <div>
-          <p className="text-base font-bold text-[#007BFF]">{heading}</p>
+          <p
+            className={`text-base font-bold text-[#007BFF] md:max-w-[148px]  ${
+              isArabic && "md:ml-[60%]"
+            }`}
+          >
+            {heading}
+          </p>
           <p className="text-base font-medium text-[#0E1F51] md:max-w-[148px] ">
             {text}
           </p>

@@ -16,7 +16,10 @@ export default function Header() {
   const t = language === "ar" ? ar : en;
 
   return (
-    <header className="bg-white shadow-lg w-full scroll-smooth">
+    <header
+      className="bg-white shadow-lg w-full scroll-smooth"
+      style={{ boxShadow: "0px 13px 19px 0px #00000012" }}
+    >
       <div
         className={`py-3 flex items-center justify-between px-8 ${
           language === "ar" ? "flex-row-reverse" : "flex-row"
