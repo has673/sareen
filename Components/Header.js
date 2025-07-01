@@ -38,7 +38,7 @@ export default function Header() {
           >
             <Link href="/">{t.header.nav.home}</Link>
             <Link href="/Services">{t.header.nav.services}</Link>
-            <Link href="#team">{t.header.nav.about}</Link>
+            <Link href="/#team">{t.header.nav.about}</Link>
             <Link href="/Contact">{t.header.nav.contact}</Link>
           </nav>
         </div>
@@ -78,7 +78,7 @@ export default function Header() {
             <Link href="/Services" onClick={() => setMenuOpen(false)}>
               {t.header.nav.services}
             </Link>
-            <Link href="#team" onClick={() => setMenuOpen(false)}>
+            <Link href="/#team" onClick={() => setMenuOpen(false)}>
               {t.header.nav.about}
             </Link>
             <Link href="/Contact" onClick={() => setMenuOpen(false)}>
