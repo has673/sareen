@@ -7,7 +7,7 @@ const MissionTab = ({ heading, image, text }) => {
   const { t, language } = useLanguage();
   const isArabic = language === "ar";
   return (
-    <div className="bg-white rounded-[10px]  px-2 md:h-[100px] md:w-[263px]  ">
+    <div className="bg-white rounded-[10px]  px-2 md:w-[263px]  ">
       <div className="flex md:flex-row flex-col justify-center gap-4 py-3">
         <div className="bg-[#007BFF]/10 p-3 rounded-[10px] flex items-center justify-center md:w-[70px] w-full ">
           <Image src={image} width={35} height={35} alt="icon" />
