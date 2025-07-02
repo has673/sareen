@@ -34,12 +34,12 @@ const Team = () => {
               style={{ boxShadow: "0px 1px 10px 0px #0000001A" }}
             >
               <div className="flex justify-center mb-4">
-                <div className="rounded-full p-1 border-2 border-[#007BFF] h-30 w-30 relative">
+                <div className="h-[132px] w-[132px] relative overflow-hidden rounded-full border-2 border-[#007BFF]">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="rounded-full object-cover"
+                    className="object-cover "
                   />
                 </div>
               </div>

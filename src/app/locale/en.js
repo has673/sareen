@@ -176,14 +176,14 @@ const en = {
       {
         name: "Abdul Latef Sulami",
         role: "CEO",
-        image: "/images/john.jpg",
+        image: "/abdul.png",
         bio: "Abdul leads with vision and strategy, driving growth through innovation and leadership.",
       },
       {
         name: "Haris Arif",
         role: "Project Mananger",
         image: "/haris.jpeg",
-        bio: "Jocelyn transforms ideas into pixel-perfect websites that perform beautifully on every device.",
+        bio: "Haris transforms ideas into pixel-perfect websites that perform beautifully on every device.",
       },
     ],
   },
