@@ -22,7 +22,7 @@ const Contact = () => {
           </h2>
           <p className="text-black mb-6 text-sm">{t.contact.description}</p>
 
-          <form className="space-y-4">
+          <form className={`space-y-4 `} dir={`${isArabic && "rtl"}`}>
             <input
               type="text"
               placeholder={t.contact.placeholders.name}
@@ -64,7 +64,7 @@ const Contact = () => {
           </form>
 
           {/* Contact Info */}
-          <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap md:justify-between gap-4 text-sm text-gray-700">
+          <div className="mt-8 flex  flex-row flex-wrap md:justify-between justify-center gap-4 text-sm text-gray-700 gap-x-3">
             <div className="flex items-center gap-2">
               <Image src="/phone.png" alt="phone" width={31} height={31} />
               <div className="flex flex-col text-[13px]">
@@ -83,8 +83,8 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right: Map */}
-        <div className="w-1/3 flex-end relative">
+        <div className="w-full md:w-1/3 relative flex justify-center md:block">
+          {/* Image Container */}
           <div className="relative md:h-[550px] md:w-[430px] h-[400px] w-[300px] md:top-[13%] md:left-1/3 mx-auto">
             <Image
               src="/map.png"
@@ -94,6 +94,7 @@ const Contact = () => {
             />
           </div>
 
+          {/* Background Circle */}
           <div className="absolute top-5 md:left-77 w-full h-full bg-[#007BFF] z-0 hidden md:block"></div>
         </div>
       </div>
