@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image"; // Use <img> if you're not using Next.js
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const FeatureCard = ({ icon, title, description }) => {
+  const { t, language } = useLanguage();
+  const isArabic = language === "ar";
   return (
-    <div className="bg-[#EAF3FE] p-6 rounded-xl max-w-sm w-full shadow-sm hover:shadow-md transition duration-300">
+    <div
+      className="bg-[#EAF3FE] p-6 rounded-xl max-w-sm w-full shadow-sm hover:shadow-md transition duration-300"
+      dir={`${isArabic && "rtl"}`}
+    >
       {/* Icon */}
       <div className="mb-4">
         <div className="bg-white w-20 h-20 flex justify-center items-center rounded-[10px]">

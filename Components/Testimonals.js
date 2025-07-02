@@ -35,7 +35,7 @@ const Testimonials = () => {
 
   return (
     <div
-      className={isArabic ? "text-right" : ""}
+      className={` ${isArabic ? "text-right" : ""}`}
       style={{
         background: "linear-gradient(90deg, #E1F4FF 0%, #4CBAFA 100%)",
       }}
