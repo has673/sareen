@@ -27,6 +27,7 @@ export default function Home() {
               autoPlay
               muted
               loop
+              preload="auto"
               className="rounded-xl md:w-1/2  md:h-[300px] w-full h-auto"
             >
               <source src="/sareean.mp4" type="video/mp4" />
