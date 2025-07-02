@@ -26,29 +26,29 @@ const Contact = () => {
             <input
               type="text"
               placeholder={t.contact.placeholders.name}
-              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md"
+              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md placeholder:text-black"
             />
             <input
               type="email"
               placeholder={t.contact.placeholders.email}
-              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md"
+              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md placeholder:text-black"
             />
             <input
               type="text"
               placeholder={t.contact.placeholders.phone}
-              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md"
+              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md placeholder:text-black"
             />
             <input
               type="text"
               placeholder={t.contact.placeholders.subject}
-              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md"
+              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md placeholder:text-black"
             />
             <input
               type="text"
               placeholder={t.contact.placeholders.issue}
-              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md"
+              className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md placeholder:text-black"
             />
-            <select className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md">
+            <select className="w-full border border-[#E0E0E0] px-4 py-3 rounded-md ">
               <option>{t.contact.placeholders.findUs}</option>
               <option>{t.contact.placeholders.google}</option>
               <option>{t.contact.placeholders.referral}</option>

@@ -19,9 +19,9 @@ const Footer = () => {
   return (
     <footer className="w-full" id="contact" dir={isArabic ? "rtl" : "ltr"}>
       {/* Contact Section */}
-      <div className="py-8 bg-[#F9FAFB] relative">
+      <div className="py-8 bg-[#F9FAFB] relative md:mt-0 mt-10 ">
         <div className="container mx-auto px-4">
-          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-[90%] md:w-full max-w-7xl">
+          <div className="absolute md:top-4 left-1/2 -top-8 transform -translate-x-1/2 w-[90%] md:w-full max-w-7xl">
             <div
               className={`bg-white rounded-2xl px-8 py-6 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 `}
               style={{ boxShadow: "0px 10px 100px 0px #0000003D" }}
