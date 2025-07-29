@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
+import axios from "axios";
+import { getStrapiMedia } from "../utils/getStrapiMedia";
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,27 +14,61 @@ const Testimonials = () => {
     setActiveIndex(index);
   };
 
-  const testimonials = [
-    {
-      name: t.testimonials[0].name,
-      title: t.testimonials[0].title,
-      image: "/images/ann.png",
-      text: t.testimonials[0].text,
-    },
-    {
-      name: t.testimonials[1].name,
-      title: t.testimonials[1].title,
-      image: "/images/john.jpg",
-      text: t.testimonials[1].text,
-    },
-    {
-      name: t.testimonials[2].name,
-      title: t.testimonials[2].title,
-      image: "/images/jane.jpg",
-      text: t.testimonials[2].text,
-    },
-  ];
+  const [data, setData] = useState(null);
 
+  useEffect(() => {
+    axios
+      .get(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/above-footers?locale=${language}&populate[0]=firstImage&populate[1]=secondImage&populate[2]=thirdImage`
+      )
+      .then((res) => setData(res.data.data))
+      .catch((err) => console.error("Error fetching images:", err));
+  }, [language]);
+
+  // const testimonials = [
+  //   {
+  //     name: t.testimonials[0].name,
+  //     title: t.testimonials[0].title,
+  //     image: "/images/ann.png",
+  //     text: t.testimonials[0].text,
+  //   },
+  //   {
+  //     name: t.testimonials[1].name,
+  //     title: t.testimonials[1].title,
+  //     image: "/images/john.jpg",
+  //     text: t.testimonials[1].text,
+  //   },
+  //   {
+  //     name: t.testimonials[2].name,
+  //     title: t.testimonials[2].title,
+  //     image: "/images/jane.jpg",
+  //     text: t.testimonials[2].text,
+  //   },
+  // ];
+
+  const testimonials =
+    data && data[0]
+      ? [
+          {
+            name: data[0]?.firstTitle,
+            title: data[0]?.firstsub,
+            image: getStrapiMedia(data[0].firstImage?.url),
+            text: data[0]?.firstDescription,
+          },
+          {
+            name: data[0]?.secondTitle,
+            title: data[0]?.secondsub,
+            image: getStrapiMedia(data[0].secondImage?.url),
+            text: data[0]?.secondDescription,
+          },
+          {
+            name: data[0]?.thirdTitle,
+            title: data[0]?.thirdsub,
+            image: getStrapiMedia(data[0].thirdImage?.url),
+            text: data[0]?.thirdDescription,
+          },
+        ]
+      : [];
   return (
     <div
       className={` ${isArabic ? "text-right" : ""}`}
@@ -41,11 +77,13 @@ const Testimonials = () => {
       }}
     >
       <h1 className="text-white font-bold text-3xl text-center pt-3 md:pt-16">
-        {t.testimonialsHeading}
+        {/* {t.testimonialsHeading} */}
+        {data && data[0]?.title}
       </h1>
       <div className="flex justify-center px-4 mt-3 py-4">
         <p className="text-white font-normal text-base text-center max-w-[600px]">
-          {t.testimonialsSubheading}
+          {/* {t.testimonialsSubheading} */}
+          {data && data[0]?.description}
         </p>
       </div>
 
@@ -55,7 +93,7 @@ const Testimonials = () => {
             className="flex transition-transform duration-500"
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
-            {testimonials.map((testimonial, index) => (
+            {testimonials?.map((testimonial, index) => (
               <div
                 key={index}
                 className="min-w-full px-6 flex justify-center items-center"

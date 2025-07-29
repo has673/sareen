@@ -11,10 +11,24 @@ import {
 import Image from "next/image";
 import { FaTiktok } from "react-icons/fa";
 import { useLanguage } from "@/app/context/LanguageContext";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Footer = () => {
   const { t, language } = useLanguage();
   const isArabic = language === "ar";
+
+  const [data, setData] = useState(null);
+
+  // GET STRAPI DATA
+  useEffect(() => {
+    axios
+      .get(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/footers?locale=${language}&populate=*`
+      )
+      .then((res) => setData(res.data.data))
+      .catch((err) => console.error("Error fetching footers:", err));
+  }, [language]);
 
   return (
     <footer className="w-full" id="contact" dir={isArabic ? "rtl" : "ltr"}>
@@ -36,7 +50,8 @@ const Footer = () => {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-[#232233] font-medium break-words">
-                  {t.footer.email}
+                  {/* {t.footer.email} */}
+                  {data && data[0]?.email}
                 </span>
               </div>
 
@@ -53,7 +68,8 @@ const Footer = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-[#232233] font-medium break-words">
-                  {t.footer.phone}
+                  {/* {t.footer.phone} */}
+                  {data && data[0]?.phone}
                 </span>
               </div>
             </div>
@@ -82,7 +98,8 @@ const Footer = () => {
                 height={128}
               />
               <p className="text-white text-base leading-relaxed font-normal max-w-xs">
-                {t.footer.description}
+                {/* {t.footer.description} */}
+                {data && data[0]?.description}
               </p>
               <div className={`flex pt-2 `}>
                 {[FaTiktok, Instagram, Twitter, Youtube].map(
@@ -106,9 +123,10 @@ const Footer = () => {
             {/* Quick Links */}
             <div className="space-y-4 mt-16">
               <h3 className="text-lg font-semibold">
-                {t.footer.quickLinkTitle}
+                {/* {t.footer.quickLinkTitle} */}
+                {data && data[0]?.quicklink}
               </h3>
-              <ul className="space-y-3">
+              {/* <ul className="space-y-3">
                 {t.footer.quickLinks.map((item, i) => (
                   <li key={i}>
                     <a
@@ -119,9 +137,23 @@ const Footer = () => {
                     </a>
                   </li>
                 ))}
+              </ul> */}
+              <ul className="space-y-3">
+                {data &&
+                  data[0]?.quicklinks.split(" ").map((item, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className="text-white transition-colors text-sm md:text-base"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
               </ul>
+
               <span className="text-white font-normal text-[11px] rounded-[7px] border px-4 py-1 border-[#A1A1A1]">
-                {t.footer.paymentText}
+                {data && data[0]?.paymenttitle}
               </span>
               <div className={`flex gap-x-6 mt-4 `}>
                 <Image src="/gpay.png" alt="gpay" width={30} height={30} />
@@ -134,10 +166,10 @@ const Footer = () => {
             {/* Newsletter */}
             <div className="space-y-4 mt-16">
               <h3 className="text-lg font-semibold">
-                {t.footer.newsletterTitle}
+                {data && data[0]?.newstitles}
               </h3>
               <p className="text-white text-base leading-relaxed font-normal">
-                {t.footer.newsletterText}
+                {data && data[0]?.newsdescription}
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-2">
@@ -145,7 +177,7 @@ const Footer = () => {
                   <input
                     type="text"
                     className="w-full rounded bg-white h-12 px-4 sm:px-5 pr-10 text-sm sm:text-base text-black"
-                    placeholder={t.footer.newsletterPlaceholder}
+                    placeholder={data && data[0]?.newsemail}
                     style={{ direction: isArabic ? "rtl" : "ltr" }}
                   />
                   <div
@@ -174,7 +206,7 @@ const Footer = () => {
               <span className="w-4 h-4 border border-gray-400 rounded-full flex items-center justify-center">
                 <span className="text-xs">©</span>
               </span>
-              {t.footer.copyright}
+              {data && data[0]?.newscopyright}
             </p>
           </div>
         </div>

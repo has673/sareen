@@ -4,23 +4,38 @@ import Image from "next/image";
 import { useLanguage } from "@/app/context/LanguageContext";
 import ar from "@/app/locale/ar";
 import en from "@/app/locale/en";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Works() {
   const { language } = useLanguage();
   const t = language === "ar" ? ar : en;
   const features = t.works.features;
+  const [data, setData] = useState(null);
 
+  // GET STRAPI DATA
+  useEffect(() => {
+    axios
+      .get(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/works?locale=${language}&populate=*`
+      )
+      .then((res) => setData(res.data.data))
+      .catch((err) => console.error("Error fetching works:", err));
+  }, [language]);
   return (
     <div className="bg-white px-4 py-10">
       {/* Heading */}
       <h1 className="text-center text-[#252B42] text-3xl md:text-4xl font-normal">
-        {t.works.heading}
+        {/* {t.works.heading} */}
+        {data && data[0]?.title}
       </h1>
       <p className="text-[#737373] text-center text-sm md:text-base mt-2">
-        {t.works.subtitle1}
+        {/* {t.works.subtitle1} */}
+        {data && data[0]?.description}
       </p>
       <p className="text-[#737373] text-center text-sm md:text-base">
-        {t.works.subtitle2}
+        {/* {t.works.subtitle2} */}
+        {data && data[0]?.description2}
       </p>
       <section
         className="py-16 min-h-screen flex items-center justify-center"
